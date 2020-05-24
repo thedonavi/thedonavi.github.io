@@ -368,7 +368,7 @@ body {
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
 
   .home-section {
     display: none;
@@ -378,6 +378,11 @@ body {
     display: block;
   }
 
+  .home-section-mini-phone .row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
   .gifting-header {
     text-align: center;
     margin: 0;
@@ -385,32 +390,51 @@ body {
   }
 
   .gifting-header h1 {
-    font-size: 30px;
+    font-size: 50px;
+    margin-bottom: 20px;
   }
 
-  .gifting-header button {
+  .header-subscribe button {
     margin-top: 0px;
     background-color: #010155;
     color: white;
     font-size: 14px;
     border-radius: 15px;
     letter-spacing: 1px;
+    margin-bottom: 20px;
   }
 
-  .gifting-header button:hover {
+  .header-subscribe button:hover {
     background-color: #5267A0;
     color: white;
   }
 
-  .gifting-image {
+  .gifting-image img {
+    max-width: 350px;
+  }
+
+  .gifting-description {
+    color: #010155;
     margin-left: 10%;
-    margin-top: 30px;
+    margin-right: 10%;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .gifting-header h1 {
+    font-size: 40px;
   }
 
   .gifting-image img {
-    max-width: 250px;
+    max-width: 300px;
   }
 
+  .header-subscribe button {
+    margin-bottom: 30px;
+  }
 }
 
 /***** MEET DONI *****/

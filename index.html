@@ -111,15 +111,59 @@
 
     <!-- home section mini phone -->
     <section class="home-section-mini-phone" id="home">
-      <div class="gifting-header">
-        <h1>
-          <span style="color: #FC8901;">Gifting.</span>
-          <br>
-          <span style="color: #010155">Made Easy.</span>
-        </h1>
+      <div class="row justify-content-center">
+        <div class="gifting-header">
+          <h1>
+            <span style="color: #FC8901;">Gifting.</span>
+            <br>
+            <span style="color: #010155">Made Easy.</span>
+          </h1>
+        </div>
       </div>
-      <div class="gifting-image">
-        <img src="img/phone/home-page-phone.png" alt="">
+      <div class="row justify-content-center">
+        <div class="gifting-description">
+          <p>
+            We help indecisive and short-in-time gift buyers pick a unique gift by recommending them 3-5 products from popular brands,
+            tailored according to the gift recipient’s basic characteristics and preferences.
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="header-subscribe">
+          <button type="button" class="btn btn-subscribe" onclick="document.getElementById('subscribe-home-phone').style.display='block'">
+            SUBSCRIBE
+          </button>
+
+          <div id="subscribe-home-phone" class="modal">
+            <span onclick="document.getElementById('subscribe-home-phone').style.display='none'" class="close" title="Close Modal">times;</span>
+            <form class="modal-content" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeRdsYHdKMig06huM_l0Owzr1gS_xK5hnTcj3AYZdqs8mNvpQ/formResponse">
+              <div class="container">
+                <h1>Subscribe</h1>
+                <hr>
+
+                <div class="form-content">
+                  <label for="name"><b>Name</b></label>
+                  <br>
+                  <input type="text" placeholder="Enter Name" name="entry.1984735154" required>
+                  <br>
+                  <label for="email"><b>Email</b></label>
+                  <br>
+                  <input type="text" placeholder="Enter Email" name="entry.2082048499" required>
+
+                  <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('subscribe-home-phone').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="subscribebtn">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="gifting-image">
+          <img src="img/phone/home-page-phone.png" alt="">
+        </div>
       </div>
     </section>
 
@@ -749,12 +793,16 @@
 
     <script>
       var modal_home = document.getElementById('subscribe-home');
+      var modal_home_phone = document.getElementById('subscribe-home-phone');
       var modal = document.getElementById('subscribe-form');
 
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
           if (event.target == modal_home) {
             modal_home.style.display = "none";
+          }
+          if (event.target == modal_home_phone) {
+            modal_home_phone.style.display = "none";
           }
           if (event.target == modal) {
               modal.style.display = "none";
