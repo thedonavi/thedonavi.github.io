@@ -16,8 +16,15 @@ body {
 }
 
 @media (min-width: 725px) {
-  body {
+  .main-page {
     background-image: url("../img/background/background.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+  }
+
+  .under-construction {
+    background-image: url("../img/background/under-construction.svg") !important;
     background-repeat: no-repeat;
     background-size: 100%;
     overflow-x: hidden;
@@ -2052,6 +2059,188 @@ input[type=text] {
   .bottom-header img {
     margin-top: 10px;
     max-width: 60px;
+  }
+
+}
+
+
+/***** UNDER CONSTRUCTION PAGE *****/
+
+.construction-home-phone {
+  display: none;
+}
+
+.construction-home {
+  height: 80vh;
+  margin-top: 11%;
+}
+
+.under-construction-phone img {
+  max-width: 680px;
+}
+
+.under-construction-text {
+  color: #010155;
+  margin-left: 25%;
+}
+
+.under-construction-text h1 {
+  font-size: 70px;
+}
+
+.under-construction-text p {
+  font-size: 25px;
+}
+
+@media (max-width: 1440px) {
+
+  .construction-home {
+    height: 70vh;
+  }
+
+  .under-construction-phone img {
+    max-width: 560px;
+  }
+
+  .under-construction-text h1 {
+    font-size: 60px;
+  }
+
+  .under-construction-text p {
+    font-size: 22px;
+  }
+
+  .under-construction-text {
+    margin-left: 20%;
+  }
+
+}
+
+@media (max-width: 1280px) {
+
+  .construction-home {
+    height: 60vh;
+    margin-top: 10%;
+  }
+
+  .under-construction-phone img {
+    max-width: 500px;
+  }
+
+  .under-construction-text h1 {
+    font-size: 50px;
+  }
+
+  .under-construction-text p {
+    font-size: 20px;
+  }
+
+  .under-construction-text {
+    margin-left: 20%;
+  }
+
+}
+
+@media (max-width: 1180px) {
+
+  .construction-home {
+    height: 50vh;
+    margin-top: 10%;
+  }
+
+  .under-construction-phone img {
+    max-width: 450px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .construction-home {
+    height: 50vh;
+    margin-top: 10%;
+  }
+
+  .under-construction-text h1 {
+    font-size: 40px;
+  }
+
+  .under-construction-phone img {
+    max-width: 400px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .construction-home {
+    height: 35vh;
+    margin-top: 6%;
+  }
+
+  .under-construction-text h1 {
+    font-size: 30px;
+  }
+
+  .under-construction-text p {
+    font-size: 16px;
+  }
+
+  .under-construction-phone img {
+    max-width: 300px;
+  }
+
+}
+
+
+@media (max-width: 425px) {
+  .construction-home {
+    display: none;
+  }
+
+  .construction-home-phone {
+    display: block;
+  }
+
+  .construction-home-phone .row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .under-construction-text-phone {
+    color: #010155;
+    text-align: center;
+  }
+
+  .under-construction-image-phone img {
+    max-width: 300px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .under-construction-text-phone h1 {
+    font-size: 35px;
+  }
+
+  .under-construction-text-phone p {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .under-construction-text-phone h1 {
+    font-size: 30px;
+  }
+
+  .under-construction-image-phone img {
+    max-width: 260px;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 
 }
