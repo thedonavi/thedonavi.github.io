@@ -1849,13 +1849,24 @@ body {
 }
 
 .cancelbtn {
-  padding: 14px 20px !important;
-  background-color: #f44336 !important;
+  /* padding: 14px 20px !important;
+  background-color: #f44336 !important; */
 }
 
-.cancelbtn, .subscribebtn {
+.cancelbtn {
+  float: right !important;
+  background: white !important;
+  color: gray !important;
+  margin-top: -20px !important;
+  font-size: 40px !important;
+  width: 10%;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.subscribebtn {
   float: center !important;
-  width: 40% !important;
+  width: 50% !important;
 }
 
 .container {
@@ -1930,12 +1941,6 @@ hr {
   display: table;
 }
 
-@media screen and (max-width: 768px) {
-  .cancelbtn, .subscribebtn {
-    width: 100%;
-  }
-}
-
 input[type=text] {
   width: 80%;
   padding: 16px;
@@ -1952,14 +1957,19 @@ input[type=text] {
   }
 
   .cancelbtn {
-    padding: 14px 20px !important;
-    background-color: #f44336 !important;
+    padding: 0px !important;
+    background-color: white !important;
   }
 
-  .cancelbtn, .subscribebtn {
+  .cancelbtn {
+    float: right !important;
+    width: 20%;
+  }
+
+  .subscribebtn {
     float: center !important;
-    width: 46% !important;
-    font-size: 16px;
+    width: 60% !important;
+    font-size: 20px !important;
   }
 
   input[type=text] {
