@@ -1669,29 +1669,43 @@ body {
 
 @media (max-width: 768px) {
 
-  .launching-soon-section {
+  .launching-soon-section-phone {
+    display: block;
     margin-left: 10%;
     margin-right: 10%;
+    text-align: center;
   }
 
-  .launching-soon-section h1 {
+  .launching-soon-section-phone h1 {
     font-size: 30px;
   }
 
-  .launching-soon-section h2 {
-    font-size: 16px;
+  .launching-soon-section-phone h2 {
+    font-size: 20px;
+  }
+
+  .launching-soon-section {
+    display: none;
   }
 
 }
 
 @media (max-width: 320px) {
 
-  .launching-soon-section h1 {
+  .launching-soon-section-phone {
+    display: block;
+  }
+
+  .launching-soon-section-phone h1 {
     font-size: 30px;
   }
 
-  .launching-soon-section h2 {
+  .launching-soon-section-phone h2 {
     font-size: 20px;
+  }
+
+  .launching-soon-section {
+    display: none;
   }
 
 }
@@ -1829,15 +1843,47 @@ body {
   margin-right: 10px;
 }
 
+.form-description {
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #010155;
+}
+
+.form-description h1{
+  text-align: left !important;
+
+}
+
+.form-description-phone {
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  text-align: center;
+  color: #010155;
+  margin-bottom: 40px;
+}
+
+.form-description-phone p {
+  font-size: 16px;
+}
+
+.form-description-phone h1 {
+  font-size: 40px;
+}
+
+.form-content-phone {
+  text-align: center;
+}
+
 .modal button {
-  background-color: #4CAF50;
+  background-color: #010155;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  /* width: 50%; */
   opacity: 0.9;
+  border-radius: 15px;
 }
 
 .modal button:hover {
@@ -1846,24 +1892,64 @@ body {
 
 .modal form {
   width: 60%;
+  background-color: #FED5A5;
 }
 
-.modal p {
-  margin-left: 10%;
-  margin-right: 10%;
+.cancelbtn-phone {
+  background-color: #FED5A5 !important;
+  color: #010155 !important;
+  font-size: 30px !important;
+}
+
+.cancelbtn-phone-bottom {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  background-color: #FED5A5 !important;
+  color: #010155 !important;
+  font-size: 30px !important;
+  margin-left: -85% !important;
+}
+
+.launching-soon-section-phone {
+  display: none;
+}
+
+.form-content-phone label {
   font-size: 16px;
-  text-align:center;
 }
 
-.cancelbtn {
-  /* padding: 14px 20px !important;
-  background-color: #f44336 !important; */
+@media (max-width: 425px) {
+
+  .launching-soon-section-phone {
+    display: block;
+  }
+
+  .launching-soon-section {
+    display: none;
+  }
+
+
+  .modal form {
+    width: 100%;
+  }
+
+  input[type=text] {
+    width: 80% !important;
+    background-color: white !important;
+  }
+
+  .clearfix button {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+
+
 }
 
 .cancelbtn {
   float: right !important;
-  background: white !important;
-  color: gray !important;
+  background: #FED5A5 !important;
+  color: #010155 !important;
   margin-top: -20px !important;
   font-size: 40px !important;
   width: 10%;
@@ -1877,14 +1963,9 @@ body {
 }
 
 .container {
-  /* padding: 25px; */
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   padding-left: 25px;
   padding-right: 25px;
-}
-
-.container p {
-  color: black;
 }
 
 .modal {
@@ -1896,8 +1977,8 @@ body {
   width: 80%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-/*  background-color: #474e5d;*/
-  background-color: #FED5A5;
+  background-color: #474e5d;
+  /* background-color: #FED5A5; */
   padding-top: 50px;
 }
 
@@ -1917,8 +1998,8 @@ body {
 hr {
   /* border: 1px solid #f1f1f1; */
   border: 1px solid #010155 !important;
-  margin-bottom: 25px;
-  width: 90%;
+  margin-bottom: 25px !important;
+
 }
 
 /* The Close Button (x) */
@@ -1940,6 +2021,7 @@ hr {
 /* Clear floats */
 .form-content {
   text-align: center !important;
+  color: #010155;
 }
 
 .form-content label {
@@ -1963,18 +2045,14 @@ input[type=text] {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background-color: white;
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
 
   .modal form {
     width: 100%;
-  }
-
-  .cancelbtn {
-    padding: 0px !important;
-    background-color: white !important;
   }
 
   .cancelbtn {
@@ -1985,7 +2063,7 @@ input[type=text] {
   .subscribebtn {
     float: center !important;
     width: 60% !important;
-    font-size: 20px !important;
+    font-size: 22px !important;
   }
 
   input[type=text] {
