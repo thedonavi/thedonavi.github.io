@@ -1844,15 +1844,13 @@ body {
 }
 
 .form-description {
-  text-align: left;
   margin-left: 10%;
   margin-right: 10%;
   color: #010155;
 }
 
-.form-description h1{
-  text-align: left !important;
-
+.form-description p {
+  text-align: center;
 }
 
 .form-description-phone {
