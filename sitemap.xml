@@ -1,18 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-    <loc>http://mydonavi.com</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://mydonavi.com/under-construction.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://mydonavi.com/index.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://thedonavi.com/</loc>
+  <lastmod>2020-06-02T05:46:13+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://thedonavi.com/index.html</loc>
+  <lastmod>2020-06-02T05:46:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thedonavi.com/under-construction.html</loc>
+  <lastmod>2020-06-02T05:46:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
-<!--<guid value="412248f8-bc1a-45fe-b95d-b380544941bc" />-->
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
