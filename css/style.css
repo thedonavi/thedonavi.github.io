@@ -2420,6 +2420,107 @@ input[type=text] {
   margin-bottom: 40px;
 }
 
+@media (max-width: 1440px) {
+  .blog-intro-description h1 {
+    font-size: 75px;
+  }
+
+  .blog-intro-description p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .blog-intro-description h1 {
+    font-size: 70px;
+  }
+
+  .blog-intro-description p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .blog-intro-description h1 {
+    font-size: 60px;
+  }
+
+  .blog-intro-description p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .blog-intro-description {
+    width: 60%;
+    top: 10%;
+  }
+
+  .blog-intro-description h1 {
+    font-size: 50px;
+  }
+
+  .blog-intro-description p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .blog-intro-description {
+    width: 80%;
+    top: 10%;
+  }
+
+  .blog-intro-description h1 {
+    font-size: 30px;
+  }
+
+  .blog-intro-description p {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .blog-intro-description {
+    width: 80%;
+    top: 8%;
+  }
+
+  .blog-intro-description h1 {
+    font-size: 25px;
+  }
+
+  .blog-intro-description p {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .blog-intro-description {
+    width: 80%;
+    top: 5%;
+  }
+
+  .blog-intro-description h1 {
+    font-size: 22px;
+  }
+
+  .blog-intro-description p {
+    font-size: 10px;
+    margin: 0;
+  }
+}
+
+.whats-trending-phone {
+  display: none;
+}
+
 .whats-trending h1 {
   color: #FC8901;
   font-size: 60px;
@@ -2454,13 +2555,117 @@ input[type=text] {
   font-size: 18px;
 }
 
+.whats-trending-phone h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #FC8901;
+}
+
+.whats-trending-phone .card {
+  text-align: left !important;
+  margin-bottom: 10%;
+  height: 25rem;
+}
+
+.whats-trending-phone .card-body {
+  margin-top: -30px;
+}
+
+.whats-trending-phone .card-title {
+  font-size: 16px;
+}
+
+.whats-trending-phone .card-text {
+  font-size: 14px;
+}
+
 #read-more {
   color: #010155;
   font-size: 18px;
-  margin-left: 65%;
+  margin-left: 60%;
+}
+
+#read-more-phone {
+  color: #010155;
+  font-size: 14px;
+  margin-left: 60%;
+}
+
+
+@media (max-width: 1440px) {
+  .whats-trending .card {
+    width: 19rem !important;
+  }
+
+  #read-more {
+    margin-left: 55%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .whats-trending .card {
+    width: 15rem !important;
+  }
+
+  #read-more {
+    margin-left: 40%;
+  }
+
+  .whats-trending .card-text {
+    font-size: 16px;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+  .whats-trending h1 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .whats-trending .card {
+    width: 19rem !important;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .whats-trending {
+    display: none;
+  }
+
+  .whats-trending-phone {
+    display: block;
+  }
+
+  .whats-trending h1 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .whats-trending h1 {
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .related-articles {
+}
+
+.related-articles-phone {
+  display: none;
 }
 
 .related-articles h1 {
@@ -2468,6 +2673,13 @@ input[type=text] {
   margin-left: 10%;
   color: #010155;
   margin-bottom: 80px;
+}
+
+.related-articles-phone h1 {
+  font-size: 30px;
+  color: #010155;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .related-articles .row {
@@ -2496,7 +2708,47 @@ input[type=text] {
   font-size: 18px;
 }
 
-.related-articles button {
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
+  .related-articles h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .related-articles {
+    display: none;
+  }
+
+  .related-articles-phone {
+    display: block;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .related-articles h1 {
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+}
+
+.read-medium-button button {
   color: white;
   background-color: #010155;
   font-size: 25px;
@@ -2509,4 +2761,24 @@ input[type=text] {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 100px;
+}
+
+@media (max-width: 425px) {
+  .read-medium-button button {
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .read-medium-button button {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+  }
+
 }
