@@ -2536,9 +2536,11 @@ input[type=text] {
 
 .whats-trending .card {
   width: 24rem !important;
-  height: 32rem;
+  height: 37rem;
   text-align: left !important;
   margin-bottom: 10%;
+  box-shadow: -2px 6px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 26px;
 }
 
 .whats-trending .card-body{
@@ -2549,10 +2551,13 @@ input[type=text] {
 
 .whats-trending .card-title {
   font-weight: 500;
+  margin-top: -5px;
 }
 
 .whats-trending .card-text {
   font-size: 18px;
+  margin-top: 10px;
+  color: black;
 }
 
 .whats-trending-phone h1 {
@@ -2567,10 +2572,13 @@ input[type=text] {
   text-align: left !important;
   margin-bottom: 10%;
   height: 25rem;
+  box-shadow: -2px 6px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 26px;
 }
 
 .whats-trending-phone .card-body {
   margin-top: -30px;
+  text-align: left;
 }
 
 .whats-trending-phone .card-title {
@@ -2579,6 +2587,22 @@ input[type=text] {
 
 .whats-trending-phone .card-text {
   font-size: 14px;
+}
+
+.whats-trending a:visited {
+  color: #010155;
+}
+
+.whats-trending-phone a:visited {
+  color: #010155;
+}
+
+.whats-trending a:hover {
+  text-decoration: none;
+}
+
+.whats-trending-phone a:hover {
+  text-decoration: none;
 }
 
 #read-more {
@@ -2596,7 +2620,7 @@ input[type=text] {
 
 @media (max-width: 1440px) {
   .whats-trending .card {
-    width: 19rem !important;
+    width: 22rem !important;
   }
 
   #read-more {
@@ -2606,15 +2630,21 @@ input[type=text] {
 
 @media (max-width: 1280px) {
   .whats-trending .card {
-    width: 15rem !important;
+    width: 20rem !important;
+    height: 34rem;
+  }
+
+  .whats-trending h5 {
+    font-size: 20px;
   }
 
   #read-more {
-    margin-left: 40%;
+    margin-left: 60%;
+    font-size: 14px;
   }
 
   .whats-trending .card-text {
-    font-size: 16px;
+    font-size: 14px;
   }
 
 }
@@ -2632,7 +2662,12 @@ input[type=text] {
   }
 
   .whats-trending .card {
-    width: 19rem !important;
+    width: 29rem !important;
+    height: 36rem;
+  }
+
+  #read-more {
+    margin-left: 75%;
   }
 }
 
@@ -2644,6 +2679,12 @@ input[type=text] {
 
   .whats-trending-phone {
     display: block;
+  }
+
+  .whats-trending-phone .card {
+    width: 20rem !important;
+    height: 31rem;
+    margin-left: 0px !important;
   }
 
   .whats-trending h1 {
@@ -2781,4 +2822,205 @@ input[type=text] {
     border-radius: 15px;
   }
 
+}
+
+/* POP UP */
+.blog-intro-container-popup {
+  position: relative;
+  text-align: left;
+  color: #010155;
+}
+
+.blog-intro-description-popup {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 50%;
+}
+
+.blog-intro-description-popup h1 {
+  color: #FC8901;
+  margin-bottom: 5%;
+  font-size: 80px;
+}
+
+@media (max-width: 1440px) {
+  .blog-intro-description-popup h1 {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .blog-intro-description-popup h1 {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-intro-description-popup h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 425px) {
+  .blog-intro-description-popup h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .blog-intro-description-popup h1 {
+    font-size: 30px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  background: white;
+  background-image: url("../img/background/blog-page-background.svg") !important;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow-x: hidden;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  /* margin: 70px auto; */
+  margin-top: -25%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  width: 75%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+@media (max-width: 1440px) {
+  .popup {
+    margin-top: -23% !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .popup {
+    margin-top: -18% !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .popup {
+    margin-top: -15% !important;
+    width: 85%;
+  }
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: black;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 10px;
+  color: black !important;
+}
+
+@media (max-width: 425px) {
+  .popup .close {
+    font-size: 15px;
+  }
+
+  .popup .content {
+    margin-top: 50px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+
+  .popup .content h2 {
+    font-size: 20px;
+  }
+
+  .popup .content p {
+    font-size: 16px;
+  }
+
+  .blog-content-title {
+    font-size: 18px;
+  }
+
+  .overlay {
+    background-image: none !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .popup .close {
+    font-size: 12px;
+  }
+
+  .popup .content {
+    margin-top: 40px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+
+  .popup .content h2 {
+    font-size: 18px;
+  }
+
+  .popup .content p {
+    font-size: 14px;
+  }
+
+  .blog-content-title {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .overlay {
+    background-image: none !important;
+  }
+}
+
+.popup .content {
+  /* max-height: 30%; */
+  overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  color: black;
+}
+
+.popup .content img{
+  max-width: 100%;
+}
+
+.popup .content p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.popup .blog-content-title {
+  margin-top: 40px;
 }
