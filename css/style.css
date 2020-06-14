@@ -2552,6 +2552,7 @@ input[type=text] {
 .whats-trending .card-title {
   font-weight: 500;
   margin-top: -5px;
+  color: #010155;
 }
 
 .whats-trending .card-text {
@@ -2583,6 +2584,7 @@ input[type=text] {
 
 .whats-trending-phone .card-title {
   font-size: 16px;
+  color: #010155;
 }
 
 .whats-trending-phone .card-text {
