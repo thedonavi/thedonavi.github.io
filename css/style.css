@@ -2608,6 +2608,17 @@ input[type=text] {
   text-decoration: none;
 }
 
+.whats-trending .card-image {
+  position: relative;
+  text-align: center;
+}
+
+.blog-date {
+  position: absolute;
+  background: white;
+  width: 40px;
+}
+
 #read-more {
   color: #010155;
   font-size: 18px;
