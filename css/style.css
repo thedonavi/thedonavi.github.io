@@ -2090,7 +2090,7 @@ input[type=text] {
   text-align: center;
   font-size: 24px;
   margin-bottom: 30px;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .bottom-buttons button {
