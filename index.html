@@ -52,6 +52,9 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <!-- Form CSS -->
+    <link rel="stylesheet" href="css/form.css">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -96,39 +99,21 @@
               We help indecisive and short-in-time gift buyers pick a unique gift by recommending them 3-5 products from popular brands,
               tailored according to the gift recipient’s basic characteristics and preferences.
             </p>
-            <button type="button" class="btn btn-subscribe" onclick="document.getElementById('subscribe-home').style.display='block'; fbq('track', 'CompleteRegistration');">
-              SUBSCRIBE
-            </button>
-
-            <div id="subscribe-home" class="modal">
-              <span onclick="document.getElementById('subscribe-home').style.display='none'" class="close" title="Close Modal"></span>
-              <form class="modal-content" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeRdsYHdKMig06huM_l0Owzr1gS_xK5hnTcj3AYZdqs8mNvpQ/formResponse">
-                <button type="button" onclick="document.getElementById('subscribe-home').style.display='none'" class="cancelbtn">×</button>
-                <div class="container">
-
-                  <div class="form-description">
-                    <h1>Keep In Touch.</h1>
-                    <p>Get gift recommendations & latest updates on our blog delivered right to your inbox!</p>
-                    <hr>
-                  </div>
-
-                  <div class="form-content">
-                    <label for="name"><b>Name</b></label>
-                    <br>
-                    <input type="text" placeholder="Enter Name" name="entry.1984735154" required>
-                    <br>
-                    <label for="email"><b>Email</b></label>
-                    <br>
-                    <input type="text" placeholder="Enter Email" name="entry.2082048499" required>
-
-                    <div class="clearfix">
-                      <button type="submit" class="subscribebtn">Subscribe</button>
-                    </div>
-                  </div>
+            <br>
+            <p 
+              style="
+              color: #010155; 
+              font-size:12px;">
+              We are currently in beta! Subscribe to receive an invitation</p>
+            <div>
+              <form class="form-inline" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeRdsYHdKMig06huM_l0Owzr1gS_xK5hnTcj3AYZdqs8mNvpQ/formResponse">
+                <div class="form-group mb-2">
+                  <input class="form-control" style="width:320px;" type="text" placeholder="Enter Email" name="entry.2082048499" required>
                 </div>
-              </form>
+                <button type="submit" class="submit-btn btn btn-primary mb-2">Subscribe</button>
+            </form>
             </div>
-
+            
           </div>
         </div>
         <div class="col">
@@ -157,42 +142,21 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="header-subscribe">
-          <button type="button" class="btn btn-subscribe" onclick="document.getElementById('subscribe-home-phone').style.display='block'; fbq('track', 'CompleteRegistration');">
-            SUBSCRIBE
-          </button>
-
-          <div id="subscribe-home-phone" class="modal">
-            <span onclick="document.getElementById('subscribe-home-phone').style.display='none'" class="close" title="Close Modal"></span>
-            <form class="modal-content-phone" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeRdsYHdKMig06huM_l0Owzr1gS_xK5hnTcj3AYZdqs8mNvpQ/formResponse">
-              <button type="button" onclick="document.getElementById('subscribe-home-phone').style.display='none'" class="cancelbtn-phone">×</button>
-              <div class="container-phone">
-                <div class="form-description-phone">
-                  <h1>Keep In Touch.</h1>
-                  <p>Get gift recommendations & latest updates on our blog delivered right to your inbox!</p>
-                </div>
-
-                <div class="form-content-phone">
-                  <label for="name"><b>Name</b></label>
-                  <br>
-                  <input type="text" placeholder="Enter Name" name="entry.1984735154" required>
-                  <br>
-                  <label for="email"><b>Email</b></label>
-                  <br>
-                  <input type="text" placeholder="Enter Email" name="entry.2082048499" required>
-
-                  <div class="clearfix">
-                    <button type="submit" class="subscribebtn">Subscribe</button>
-                  </div>
-                </div>
-
-              </div>
-            </form>
-
-
-          </div>
+        <br>
+        <p style="
+          color: #010155; 
+          font-size:12px; 
+          margin-left:10%; 
+          margin-right:10%;
+          text-align:justify;">We are currently in beta! Subscribe to receive an invitation</p>
+        <div>
+          <form class="form-inline" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeRdsYHdKMig06huM_l0Owzr1gS_xK5hnTcj3AYZdqs8mNvpQ/formResponse">
+            <div class="form-group mb-2">
+              <input class="form-control" style="display:inline;" type="text" placeholder="Enter Email" name="entry.2082048499" required>
+            </div>
+            <button type="submit" class="submit-btn btn btn-primary mb-2">Subscribe</button>
+        </form>
         </div>
-      </div>
       <div class="row justify-content-center">
         <div class="gifting-image">
           <img src="img/phone/home-page-phone.png" alt="">
@@ -735,106 +699,6 @@
       </div>
 
     </section>
-
-    <!-- launching soon -->
-    <section class="launching-soon-section">
-      <h1><span style="color: #FC8901">Big things are coming.</span></h1>
-      <h2 style="color: #010155">
-        Our team at Donavi is working to create the best platform <span style="font-weight: 900 !important">for you</span>!
-        Drop your email & name below so that you don't miss out on getting notified when Donavi is ready for you.
-      </h2>
-
-      <div class="subscribe-section">
-        <!-- button to subscribe -->
-        <div class="subscribe-button">
-          <button onclick="document.getElementById('subscribe-form').style.display='block'; fbq('track', 'CompleteRegistration');">
-            <img src="img/icon/gift.png" alt="">
-            Subscribe
-          </button>
-        </div>
-
-        <div id="subscribe-form" class="modal">
-          <span onclick="document.getElementById('subscribe-form').style.display='none'" class="close" title="Close Modal"></span>
-          <form class="modal-content" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeRdsYHdKMig06huM_l0Owzr1gS_xK5hnTcj3AYZdqs8mNvpQ/formResponse">
-            <button type="button" onclick="document.getElementById('subscribe-form').style.display='none'" class="cancelbtn">×</button>
-            <div class="container">
-
-              <div class="form-description">
-                <h1>Keep In Touch.</h1>
-                <p>Get gift recommendations & latest updates on our blog delivered right to your inbox!</p>
-                <hr>
-              </div>
-
-              <div class="form-content">
-                <label for="name"><b>Name</b></label>
-                <br>
-                <input type="text" placeholder="Enter Name" name="entry.1984735154" required>
-                <br>
-                <label for="email"><b>Email</b></label>
-                <br>
-                <input type="text" placeholder="Enter Email" name="entry.2082048499" required>
-
-                <div class="clearfix">
-                  <button type="submit" class="subscribebtn">Subscribe</button>
-                </div>
-              </div>
-            </div>
-          </form>
-
-        </div>
-      </div>
-
-    </section>
-
-    <section class="launching-soon-section-phone">
-      <h1><span style="color: #FC8901">Big things are coming.</span></h1>
-      <h2 style="color: #010155">
-        Our team at Donavi is working to create the best platform <span style="font-weight: 900 !important">for you</span>!
-        Drop your email & name below so that you don't miss out on getting notified when Donavi is ready for you.
-      </h2>
-
-      <div class="subscribe-section">
-        <!-- button to subscribe -->
-        <div class="subscribe-button">
-          <button onclick="document.getElementById('subscribe-home-phone-bottom').style.display='block'; fbq('track', 'CompleteRegistration');">
-            <img src="img/icon/gift.png" alt="">
-            Subscribe
-          </button>
-        </div>
-
-        <div id="subscribe-home-phone-bottom" class="modal">
-          <span onclick="document.getElementById('subscribe-home-phone-bottom').style.display='none'" class="close" title="Close Modal"></span>
-          <form class="modal-content-phone" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeRdsYHdKMig06huM_l0Owzr1gS_xK5hnTcj3AYZdqs8mNvpQ/formResponse">
-            <button type="button" onclick="document.getElementById('subscribe-home-phone-bottom').style.display='none'" class="cancelbtn-phone-bottom">×</button>
-            <div class="container-phone">
-              <div class="form-description-phone">
-                <h1>Keep In Touch.</h1>
-                <p>Get gift recommendations & latest updates on our blog delivered right to your inbox!</p>
-              </div>
-
-              <div class="form-content-phone">
-                <label for="name"><b>Name</b></label>
-                <br>
-                <input type="text" placeholder="Enter Name" name="entry.1984735154" required>
-                <br>
-                <label for="email"><b>Email</b></label>
-                <br>
-                <input type="text" placeholder="Enter Email" name="entry.2082048499" required>
-
-                <div class="clearfix">
-                  <button type="submit" class="subscribebtn">Subscribe</button>
-                </div>
-              </div>
-
-            </div>
-          </form>
-
-        </div>
-
-      </div>
-
-    </section>
-
 
     <section class="bottom-buttons">
       <div class="row">

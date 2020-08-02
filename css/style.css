@@ -163,10 +163,6 @@ body {
 .gifting-made-easy button {
   margin-top: 10px;
   background-color: #010155;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   color: white;
   font-size: 30px;
   border-radius: 35px;
@@ -432,7 +428,6 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     text-align: justify;
-    margin-bottom: 10px;
   }
 
 }
@@ -1963,11 +1958,6 @@ body {
   margin: 0px !important;
 }
 
-.subscribebtn {
-  float: center !important;
-  width: 50% !important;
-}
-
 .container {
   padding-bottom: 0px;
   padding-left: 25px;
@@ -1988,12 +1978,12 @@ body {
   padding-top: 50px;
 }
 
-.modal-content {
-  background-color: #fefefe;
+/* .modal-content {
+  background-color: transparent;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
+  border: 1px solid transparent;
   width: 60%; /* Could be more or less, depending on screen size */
-}
+} */
 
 .modal-content h1{
   font-size: 40px;
@@ -2048,7 +2038,6 @@ hr {
 input[type=text] {
   width: 80%;
   padding: 16px;
-  margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
   background-color: white;
@@ -2066,16 +2055,9 @@ input[type=text] {
     width: 20%;
   }
 
-  .subscribebtn {
-    float: center !important;
-    width: 60% !important;
-    font-size: 22px !important;
-  }
-
   input[type=text] {
     width: 95%;
     padding: 16px;
-    margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
@@ -3071,3 +3053,4 @@ input[type=text] {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
